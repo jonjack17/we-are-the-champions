@@ -1,0 +1,88 @@
+body {
+   text-align: center;
+   background: #1f212b;
+   margin-left: auto;
+   margin-right: auto;
+   font-family: "Inria Sans", sans-serif;
+   color: white;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 320px;
+
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+img {
+    width: 25%;
+}
+
+#input-field {
+    height: 120px;
+    width: 85%;
+    background: #444059;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    border-radius: 8px;
+}
+
+#publish-button {
+    width: 85%;
+    padding: 10px;
+    margin: none;
+    margin: 10px;
+    border: none;
+    background: #28A9F1;
+    border-radius: 8px;
+}
+    
+
+
+
+
+
+
+.inria-sans-light {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .inria-sans-regular {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .inria-sans-bold {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .inria-sans-light-italic {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .inria-sans-regular-italic {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .inria-sans-bold-italic {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
