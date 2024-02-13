@@ -12,9 +12,33 @@ const database = getDatabase(app)
 const postsInDB = ref(database, "posts")
 const inputEl = document.getElementById("input-field")
 const buttonEl = document.getElementById("publish-button")
+const postListEl = document.getElementById("endorsement-list")
+
+
+onValue(postsInDB, function(snapshot) {
+    
+    if (snapshot.exists()){
+        clearDisplay()
+        let postsArrayValues = Object.values(snapshot.val())
+      
+       
+        
+        for (let i = 0; i < postsArrayValues.length; i++){
+            let displayedPost = document.createElement("li")
+            displayedPost.textContent = postsArrayValues[i]
+            postListEl.append(displayedPost)
+        }
+    } else {
+       postListEl.textContent = "No posts here...yet!"
+    }
+   
+})
 
 
 
+function clearDisplay() {
+    postListEl.textContent = ""
+}
 buttonEl.addEventListener("click", function() {
 
     let newPost = inputEl.value

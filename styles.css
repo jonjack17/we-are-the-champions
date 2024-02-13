@@ -74,7 +74,28 @@ h2 {
   transform: scale(.98);
 }
 
+ul {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 40px;
+  font-family: inherit;
+  
+  
+}
 
+li {
+  list-style: none;
+  text-align: left;
+  width: 250px;
+  background: white;
+  color: #292a2b;
+  padding: 10px;
+  margin: 5px;
+  display: block;
+  border-radius: 5px;
+}
     
 
 
